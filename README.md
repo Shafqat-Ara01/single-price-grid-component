@@ -20,6 +20,6 @@ A responsive pricing grid component built with HTML and CSS, inspired by modern 
 - Google Fonts
 
 ---
-Author
+Author:
 Shafqat Ara
 
