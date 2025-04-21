@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(204, 43%, 93%);
+}
+.cards {
+  display: flex;
+  max-width: 582.2px;
+  width: 90%;
+  flex-wrap: wrap;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+}
+.join {
+  background-color: #ffffff;
+  padding: 25px 35px 40px 20px;
+  border-radius: 10px 10px 0px 0px;
+}
+.join h3 {
+  color: #2ab2af;
+}
+.join .info1 {
+  color: #c0df34;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.join .info2 {
+  color: hsl(218, 22%, 67%);
+}
+.subscription {
+  background-color: #2ab2af;
+  padding: 30px 21px 20px 20px;
+  border-radius: 0px 0px 0px 10px;
+}
+.subscription .monthly-subs {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.09rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.price .money {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.price .duration {
+  margin-left: 4px;
+  color: hsl(204, 43%, 93%);
+}
+.subscription p {
+  color: hsl(200, 100%, 94%);
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+.subscription button {
+  background: #c0df34;
+  width: 18em;
+  height: 3em;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 25px 10px 10px 0px;
+  transition: all 0.3s ease-in-out;
+}
+.subscription button:hover {
+  background-color: #92af0d;
+  cursor: pointer;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+.whyUs {
+  background-color: #2ebfbd;
+  padding: 30px 74px 20px 40px;
+  border-radius: 0px 0px 10px 0px;
+}
+.whyUs .whyUs-1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.09rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.whyUs .reasons {
+  color: hsl(204, 43%, 93%);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 650px) {
+  .cards {
+    flex-direction: column;
+  }
+  .subscription {
+    border-radius: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .whyUs {
+    border-radius: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .join {
+    text-align: center;
+  }
+}
+@media (max-width: 325px) {
+  .subscription button {
+    width: 15em;
+    height: 2.5em;
+  }
+}
+@media (max-width: 261px) {
+  .subscription button {
+    width: 12em;
+    height: 2.5em;
+  }
+}
